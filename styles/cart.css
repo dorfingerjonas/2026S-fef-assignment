@@ -1,0 +1,91 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5vh;
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+img {
+    width: 50%;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.quantity-wrapper span {
+    margin: 0 7px;
+}
+
+.quantity-wrapper span:nth-child(1), .quantity-wrapper span:nth-child(3) {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quantity-wrapper span:nth-child(1) {
+    color: red;
+}
+
+.quantity-wrapper span:nth-child(3) {
+    color: green;
+}
+
+#cartPrice {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+#empty-cart {
+    width: 100%;
+    color: var(--accent);
+    text-align: center;
+    display: none;
+    margin-top: 5vh;
+}
+
+#empty-cart a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+#checkout-btn {
+    text-decoration: none;
+}
+
+#checkout-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Schoolbell", cursive;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn button:hover {
+    background-color: var(--secondary);
+}
+
+@media screen and (max-width: 600px) {
+
+}

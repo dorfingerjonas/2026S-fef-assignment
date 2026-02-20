@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
     <script src="data/items.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav class="content-wrapper">
+<header class="content-wrapper">
+    <div id="logo-menu-wrapper">
+        <!--    https://codepen.io/dorfingerjonas/pen/MWwpPWW - Burger animation done by me -->
+        <div id="menuWrapperOne">
+            <div class="bar" id="barTransOne"></div>
+            <div class="bar" id="barTransTwo"></div>
+            <div class="bar" id="barTransThree"></div>
+        </div>
+
         <a href="index.html">
             <!-- Logo Generated with Google Gemini Nano Banana Pro -->
             <img src="images/logo.png" alt="Logo">
         </a>
+    </div>
 
+    <nav>
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -31,8 +42,6 @@
                 <a href="cart.html" class="active">Cart</a>
             </li>
         </ul>
-
-        <div></div>
     </nav>
 </header>
 </body>

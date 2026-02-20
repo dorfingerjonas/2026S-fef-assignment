@@ -31,12 +31,12 @@
     margin: 0.5rem 0;
 }
 
-
 #error-text {
     width: 100%;
     color: var(--accent);
     text-align: center;
     display: none;
+    margin-top: 5vh;
 }
 
 #error-text a {

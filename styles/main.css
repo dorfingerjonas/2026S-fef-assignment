@@ -14,6 +14,12 @@ body, html {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden scroll;
+    font-family: "Schoolbell", cursive;
 }
 
 .content-wrapper {

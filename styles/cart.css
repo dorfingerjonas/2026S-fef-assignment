@@ -86,6 +86,9 @@ img {
     background-color: var(--secondary);
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 768px) {
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
 }

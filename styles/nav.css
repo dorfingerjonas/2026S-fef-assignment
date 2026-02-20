@@ -1,0 +1,173 @@
+/* nav */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    transition: height 500ms ease;
+}
+
+#logo-menu-wrapper {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+#logo-menu-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 100%;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 1.5vmin);
+}
+
+nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 3em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 7em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: 200ms ease-in-out border-bottom-color;
+}
+
+nav ul a:hover {
+    border-bottom-color: var(--primary);
+}
+
+nav ul a.active {
+    color: var(--secondary);
+}
+
+nav ul a.active:hover {
+    border-bottom-color: var(--secondary);
+}
+
+#menuWrapperOne {
+    width: 30px;
+    height: 23px;
+    position: relative;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: var(--primary);
+    transition: ease-in-out all 300ms;
+}
+
+#barTransOne,
+#barOpOne {
+    position: absolute;
+    top: 0;
+}
+
+#barTransTwo,
+#barOpTwo {
+    position: absolute;
+    top: 10px;
+}
+
+#barTransThree,
+#barOpThree {
+    position: absolute;
+    top: 20px;
+}
+
+.goToMiddle {
+    top: 10px !important;
+}
+
+.scale {
+    transform: scale(1.5) !important;
+    opacity: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.turnLeft {
+    transform: rotateZ(45deg);
+}
+
+.turnRight {
+    transform: rotateZ(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    #menuWrapperOne {
+        display: flex;
+    }
+
+    nav {
+        grid-column: 1;
+        justify-content: center;
+        height: 0;
+        font-size: calc(10px + 3vmin);
+    }
+
+    .transition {
+        transition: opacity 500ms ease;
+    }
+
+    #logo-menu-wrapper {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
